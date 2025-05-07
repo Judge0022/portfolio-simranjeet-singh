@@ -24,7 +24,7 @@ const Nav = () => (
     <div className="container mx-auto flex items-center justify-between px-6 py-4">
       <div className="text-xl font-bold">Simranjeet Singh</div>
       <ul className="flex space-x-6">
-      {['Home','About','Services','Work','Gallery','Certifications','Resume','Contact'].map(section => (
+      {['Home','About','Services','Work','Gallery'].map(section => (
           <li key={section}>
             <a href={`#${section.toLowerCase()}`} className="hover:text-blue-600">
               {section}
@@ -55,6 +55,7 @@ const HeroSection = () => (
   </section>
 );
 
+
 // About Me Section
 const AboutSection = () => (
   <section id="about" className="py-20">
@@ -77,6 +78,8 @@ const AboutSection = () => (
     </div>
   </section>
 );
+
+
 
 // Services & Expertise Section with auto-scrolling marquee
 const ServicesSection = () => {
@@ -196,7 +199,7 @@ const MediaGallerySection = () => {
 const CertificationsSection = () => (
   <section id="certifications" className="bg-gray-100 py-20">
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-bold mb-8 text-center">Certifications & Education</h2>
+      <h2 className="text-3xl font-bold mb-8 text-center">Education & Certifications</h2>
       {/* Diploma and Coursework */}
       <div className="mb-12 text-center">
         <h3 className="text-xl font-semibold mb-2">
@@ -228,7 +231,7 @@ const CertificationsSection = () => (
 const ResumeSection = () => (
   <section id="resume" className="py-20 text-center">
     <div className="container mx-auto px-6">
-      <h2 className="text-3xl font-bold mb-6">Download My Resume</h2>
+      <h2 className="text-3xl font-bold mb-6">Download My Resume!</h2>
       <a href="/Resume-Simranjeet_Singh .pdf" download className="px-6 py-3 bg-blue-600 text-white rounded hover:bg-blue-700">
         Download PDF
       </a>
@@ -241,18 +244,18 @@ const ContactSection = () => (
   <section id="contact" className="bg-gray-100 py-20">
     <div className="container mx-auto px-6 md:w-1/2">
       <h2 className="text-3xl font-bold mb-6 text-center">Get in Touch</h2>
-      <form className="space-y-4">
-        <input type="text" placeholder="Your Name" className="w-full p-3 border rounded" />
-        <input type="email" placeholder="Your Email" className="w-full p-3 border rounded" />
-        <textarea placeholder="Your Message" className="w-full p-3 border rounded h-32"></textarea>
-        <button type="submit" className="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
-      </form>
-      <div className="mt-6 text-center space-x-4">
-        {/* Replace with real links */}
-        <a href="https://ca.linkedin.com/in/simranjeet-singh-054139292" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="judgesimran1@gmail.com">Email</a>
-        <a href="tel:+1(437)662-4947">Phone</a>
+      <div className="mt-6 text-center space-x-8 text-xl">
+        <a href="https://ca.linkedin.com/in/simranjeet-singh-054139292" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
+          LinkedIn
+        </a>
+        <a href="mailto:judgesimran1@gmail.com" className="hover:text-blue-600">
+          Email
+        </a>
+        <a href="tel:+14376624947" className="hover:text-blue-600">
+          Phone
+        </a>
       </div>
     </div>
   </section>
 );
+
